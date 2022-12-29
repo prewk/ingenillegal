@@ -1,7 +1,7 @@
-import Header from "../components/header";
+import Header from "../components/old/header";
 import React from "react";
-import Local from "../components/local";
-import Footer from "../components/footer";
+import Local from "../components/old/local";
+import Footer from "../components/old/footer";
 
 export default function ArDuPapperslos() {
   return (
