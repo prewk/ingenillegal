@@ -2,16 +2,16 @@ import React from "react";
 
 export function Footer() {
   const languages: [string, string][] = [
-    ["English", "#"],
-    ["Bosanski Hrvatski Srpski", "#"],
-    ["Español", "#"],
-    ["Deutsch", "#"],
-    ["ትግርኛ", "#"],
-    ["كوردی", "#"],
-    ["فارسی", "#"],
-    ["Русский", "#"],
-    ["Türkçe", "#"],
-    ["Français", "#"],
+    ["English", "/english"],
+    ["Bosanski Hrvatski Srpski", "/bosanski-hrvatski-srpski"],
+    ["Español", "/spanish"],
+    ["Deutsch", "/german"],
+    ["ትግርኛ", "/tigrigna"],
+    ["كوردی", "/kurdish"],
+    ["فارسی", "/persian"],
+    ["Русский", "/russian"],
+    ["Türkçe", "/turkish"],
+    ["Français", "/french"],
   ];
 
   return (

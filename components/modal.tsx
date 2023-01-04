@@ -11,8 +11,8 @@ export function Modal({
   children: React.ReactNode;
 }) {
   return (
-    <nav
-      className={`bg-ocean-light inset-0 fixed transition-opacity ${
+    <div
+      className={`z-10 bg-ocean-light inset-0 fixed transition-opacity ${
         visible ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     >
@@ -33,7 +33,7 @@ export function Modal({
           />
         </svg>
       </div>
-      <div className="flex justify-evenly items-center">{children}</div>
-    </nav>
+      {children}
+    </div>
   );
 }
