@@ -30,17 +30,14 @@ export function Header({ appearance }: { appearance: "light" | "dark" }) {
     ["Français", "/french"],
   ];
 
-  const fill = appearance === "light" ? "fill-carbon" : "fill-white";
-  const textColor = appearance === "light" ? "text-carbon" : "text-white";
+  const fill = appearance === "light" ? "fill-white" : "fill-carbon";
+  const textColor = appearance === "light" ? "text-white" : "text-carbon";
 
   return (
     <>
       <header className="p-4 md:p-8 flex items-center justify-between absolute top-0 inset-x-0">
-        <Link
-          href="https://www.ingenillegal.org/"
-          className="h-14 md:h-24 w-auto"
-        >
-          <Logo appearance={appearance === "light" ? "dark" : "light"} />
+        <Link href="/" className="h-14 md:h-24 w-auto">
+          <Logo appearance={appearance} />
         </Link>
         <div className="text-right">
           <a
