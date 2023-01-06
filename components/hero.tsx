@@ -2,20 +2,24 @@ import React from "react";
 
 export default function Hero({
   appearance,
+  bg,
   title,
   subtitle,
 }: {
   appearance: "light" | "dark";
+  bg?: string;
   title: string;
   subtitle: string;
 }) {
+  const bgDeclaration = bg ? `url('${bg}')` : "none";
+
   return (
     <section
-      className="h-[80vh] flex flex-col justify-center"
+      className="h-[80vh] flex flex-col justify-center bg-cover"
       style={{
         backgroundImage:
           appearance === "dark"
-            ? "url('/imai_banner_grafik.png'), linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('/imai_banner_2.jpeg')"
+            ? `url('/imai_banner_grafik.png'), linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), ${bgDeclaration}`
             : "none",
       }}
     >

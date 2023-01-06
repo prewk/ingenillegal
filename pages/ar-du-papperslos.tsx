@@ -65,6 +65,7 @@ export default function ArDuPappersLos() {
           appearance="dark"
           title="Är du papperslös?"
           subtitle="Nätverket Ingen människa är illegal arbetar med att praktiskt stödja människor utan uppehållstillstånd."
+          bg="/imai_banner_2.jpeg"
         />
         <section className="mx-auto my-24 max-w-[650px]">
           <p className="mb-4 text-xl font-light font-roboto">
