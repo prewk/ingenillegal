@@ -24,14 +24,14 @@ export default function Hero({
       }}
     >
       <h1
-        className={`font-roboto text-3xl md:text-5xl font-black text-center mx-auto max-w-[20ch] mb-8 ${
+        className={`font-roboto text-3xl md:text-5xl font-black text-center mx-auto px-4 md:max-w-[60%] mb-8 ${
           appearance === "light" ? "text-carbon" : "text-white"
         }`}
       >
         {title}
       </h1>
       <p
-        className={`font-mono text-xl md:text-2xl text-center mx-auto max-w-[56ch] ${
+        className={`font-mono text-xl md:text-2xl text-center mx-auto px-4 md:max-w-[75%] ${
           appearance === "light" ? "text-carbon" : "text-white"
         }`}
       >
