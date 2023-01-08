@@ -15,7 +15,7 @@ export default function OmOss() {
           title="Om oss"
           subtitle="Nätverket Ingen människa är illegal arbetar med att praktiskt stödja personer som fått avslag på sin asylansökan hos Migrationsverket."
         />
-        <section className="mx-auto mb-24 px-4 md:max-w-[75%] lg:max-w-[620px]">
+        <section className="mx-auto mb-24 px-4 md:max-w-[75%] lg:max-w-[720px] lg:px-16">
           <Image src={ballong} alt="Ballong med texten 'No one illegal'" />
           <p className="my-4 text-xl font-light font-roboto">
             Ingen illegal är en ideell organisation och har inga anställda.

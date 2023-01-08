@@ -96,11 +96,11 @@ export default function ArDuPappersLos() {
         </section>
         <section className="mx-auto mt-16 mb-48 max-w-[650px]">
           <h2 className="text-2xl mt-10 mb-2 font-black">Länkar</h2>
-          <ul>
+          <ul className="text-xl font-light font-roboto">
             {links.map(([title, linkLabel, link], i) => (
               <React.Fragment key={i}>
-                <li className="text-xl font-light font-roboto mt-4">{title}</li>
-                <li className="text-xl font-light font-roboto">
+                <li className="mt-4">{title}</li>
+                <li>
                   <a
                     className="underline text-ocean-light hover:text-ocean-medium transition-colors"
                     href={link}
