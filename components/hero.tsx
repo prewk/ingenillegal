@@ -15,7 +15,7 @@ export default function Hero({
 
   return (
     <section
-      className="h-[80vh] flex flex-col justify-center bg-cover"
+      className="h-[70vh] flex flex-col justify-start bg-cover"
       style={{
         backgroundImage:
           appearance === "dark"

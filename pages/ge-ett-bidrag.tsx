@@ -40,7 +40,7 @@ export default function GeEttBidrag() {
             Naturligtvis kan du även ge enstaka summor, genom att föra över
             pengar till våra PostGiro, BankGiro eller Swish-nummer. Du hittar
             all information om hur du skänker pengar på respektiva lokalgrupps
-            sida.{" "}
+            sida.
           </p>
 
           <h2 className="text-2xl mt-10 mb-2 font-black">Gåvobevis</h2>

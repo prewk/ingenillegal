@@ -12,6 +12,7 @@ export default function Document() {
       <body className="bg-cream text-carbon font-roboto leading-normal">
         <Main />
         <NextScript />
+        <div id="fb-root"></div>
       </body>
     </Html>
   );

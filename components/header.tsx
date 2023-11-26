@@ -35,7 +35,7 @@ export function Header({ appearance }: { appearance: "light" | "dark" }) {
 
   return (
     <>
-      <header className="p-4 md:p-8 flex items-center justify-between absolute top-0 inset-x-0">
+      <header className="p-4 md:p-8 relative flex items-center justify-between absolute top-0 inset-x-0">
         <Link href="/" className="h-14 md:h-24 w-auto">
           <Logo appearance={appearance} />
         </Link>
