@@ -10,11 +10,11 @@ export function Header({ appearance }: { appearance: "light" | "dark" }) {
 
   const chapters: [string, string][] = [
     ["Göteborg", "/goteborg"],
-    ["Östersund", "/ostersund"],
     ["Stockholm", "/stockholm"],
     ["Trollhättan", "/trollhattan"],
     ["Umeå", "/umea"],
     ["Uppsala", "/uppsala"],
+    ["Östersund", "/ostersund"],
   ];
 
   const languages: [string, string][] = [
@@ -35,7 +35,7 @@ export function Header({ appearance }: { appearance: "light" | "dark" }) {
 
   return (
     <>
-      <header className="p-4 md:p-8 relative flex items-center justify-between absolute top-0 inset-x-0">
+      <header className="p-4 md:p-8 flex items-center justify-between absolute top-0 inset-x-0 z-10">
         <Link href="/" className="h-14 md:h-24 w-auto">
           <Logo appearance={appearance} />
         </Link>
@@ -85,11 +85,11 @@ export function Header({ appearance }: { appearance: "light" | "dark" }) {
         visible={menuState === "menu"}
         onClose={() => setMenuState("none")}
       >
-        <div className="flex justify-evenly items-center flex-col sm:flex-row">
-          <ul className="font-roboto text-2xl font-bold text-center sm:text-left">
+        <div className="flex justify-center items-center flex-col sm:flex-row">
+          <ul className="font-roboto text-2xl font-bold text-center sm:text-left list-none mx-0 px-16">
             <li>
               <Link
-                className="text-white border border-transparent inline-block my-1.5 py-0.5 border-b border-b-light/0 hover:border-b-light transition-all duration-300"
+                className="text-2xl py-2 no-underline text-white hover:text-white border border-transparent inline-block border-b border-b-light/0 hover:border-b-light transition-all duration-300"
                 href="/ar-du-papperslos"
               >
                 Är du papperslös?
@@ -97,7 +97,7 @@ export function Header({ appearance }: { appearance: "light" | "dark" }) {
             </li>
             <li>
               <Link
-                className="text-white border border-transparent inline-block my-1.5 py-0.5 border-b border-b-light/0 hover:border-b-light transition-all duration-300"
+                className="text-2xl py-2 no-underline text-white hover:text-white border border-transparent inline-block border-b border-b-light/0 hover:border-b-light transition-all duration-300"
                 href="/engagera-dig"
               >
                 Engagera dig
@@ -105,7 +105,7 @@ export function Header({ appearance }: { appearance: "light" | "dark" }) {
             </li>
             <li>
               <Link
-                className="text-white border border-transparent inline-block my-1.5 py-0.5 border-b border-b-light/0 hover:border-b-light transition-all duration-300"
+                className="text-2xl py-2 no-underline text-white hover:text-white border border-transparent inline-block border-b border-b-light/0 hover:border-b-light transition-all duration-300"
                 href="/ge-ett-bidrag"
               >
                 Ge ett bidrag
@@ -113,18 +113,18 @@ export function Header({ appearance }: { appearance: "light" | "dark" }) {
             </li>
             <li>
               <Link
-                className="text-white border border-transparent inline-block my-1.5 py-0.5 border-b border-b-light/0 hover:border-b-light transition-all duration-300"
+                className="text-2xl py-2 no-underline text-white hover:text-white border border-transparent inline-block border-b border-b-light/0 hover:border-b-light transition-all duration-300"
                 href="/om-oss"
               >
                 Om oss
               </Link>
             </li>
           </ul>
-          <ul className="font-mono text-center sm:text-left mt-4 sm:mt-0">
+          <ul className="font-mono text-center sm:text-left mt-4 px-16 sm:mt-0 list-none">
             {chapters.map(([label, link]) => (
               <li key={label}>
                 <Link
-                  className="text-white border border-transparent inline-block my-0.5 py-0.5 border-b border-b-light/0 hover:border-b-light transition-all duration-300"
+                  className="text-lg no-underline text-white hover:text-white border border-transparent inline-block border-b border-b-light/0 hover:border-b-light transition-all duration-300"
                   href={link}
                 >
                   {label}
@@ -143,7 +143,7 @@ export function Header({ appearance }: { appearance: "light" | "dark" }) {
             {languages.map(([label, link]) => (
               <li key={label}>
                 <Link
-                  className="text-white border border-transparent inline-block my-0.5 py-0.5 border-b border-b-light/0 hover:border-b-light transition-all duration-300"
+                  className="text-white hover:text-white border border-transparent inline-block border-b border-b-light/0 hover:border-b-light transition-all duration-300"
                   href={link}
                 >
                   {label}

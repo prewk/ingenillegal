@@ -43,3 +43,7 @@ strong {
 ul {
     @apply ml-8 mb-4 list-disc text-xl font-light font-roboto;
 }
+
+main {
+    @apply z-0 relative;
+}
