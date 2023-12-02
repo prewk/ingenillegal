@@ -1,14 +1,7 @@
 import { Header} from '../components/header';
 import Hero from "../components/hero";
 import {Download} from "../components/download";
-
-<Header appearance="light" />
-<Hero
-  appearance="dark"
-  title="Ge ett bidrag"
-  subtitle="Alla pengar som Ingen Människa är Illegal får in går oavkortat till stöd för gömda. Vi är ständigt i behov av ekonomiska bidrag för hyror, mat, kläder, spårvagnskort etc."
-  bg="/imai_uppsala_demonstration_2011-03-20.jpg"
-/>
+import {GlobalWrapper} from "../components/global-wrapper";
 
 ## Bli månadsgivare
 
@@ -42,3 +35,13 @@ Mejla namn, adress och hur mycket du vill bidra med till: [dbprenumerationsthlm@
 ## Bidrag med annat än pengar
 
 Har du ett rum ledigt? Ett kort på kollektivtrafiken som inte gått ut fast du ska åka från stan? Vet du något ställe där det går att hämta gratis mat? Har du kunskaper du vill dela med dig av? Kontakta lokalgruppen närmast dig för att förmedla information.
+
+export default ({ children }) =>
+  <GlobalWrapper
+    appearance="dark"
+    title="Ge ett bidrag"
+    subtitle="Alla pengar som Ingen Människa är Illegal får in går oavkortat till stöd för gömda. Vi är ständigt i behov av ekonomiska bidrag för hyror, mat, kläder, spårvagnskort etc."
+    bg="/imai_uppsala_demonstration_2011-03-20.jpg"
+  >
+    {children}
+  </GlobalWrapper>

@@ -18,7 +18,7 @@ export function LocalWrapper({
   return (
     <>
       <Header appearance="dark" />
-      <div className="flex flex-col lg:flex-row max-w-[1000px] mx-auto mb-16">
+      <div className="flex flex-col lg:flex-row max-w-[1000px] mx-auto my-32">
         <ul className="min-w-[320px] font-mono mx-0 px-8 list-none">
           <li className="mb-4">
             <a
