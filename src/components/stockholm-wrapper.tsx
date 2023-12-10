@@ -2,8 +2,11 @@
 
 import { LocalWrapper } from "./local-wrapper";
 import React from "react";
+import { usePathname } from 'next/navigation';
 
 export default function StockholmWrapper({ children }: { children: React.ReactNode; }) {
+  const pathname = usePathname();
+
   return (
     <LocalWrapper
       title="Stockholm"
@@ -18,6 +21,7 @@ export default function StockholmWrapper({ children }: { children: React.ReactNo
         ["Media", "/stockholm/media"],
         ["English", "/stockholm/english"],
       ]}
+      pathname={pathname}
     >
       {children}
     </LocalWrapper>
