@@ -4,7 +4,7 @@ import { LocalWrapper } from "./local-wrapper";
 import React from "react";
 import { usePathname } from 'next/navigation';
 
-export default function GoteborgWrapper({ children }: { children: React.ReactNode; }) {
+export default function TrollhattanWrapper({children}: { children: React.ReactNode; }) {
   const pathname = usePathname();
 
   return (
