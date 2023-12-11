@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React, { useState } from "react";
 import Logo from "./logo";
@@ -7,7 +7,7 @@ import { Modal } from "./modal";
 
 export function Header({ appearance }: { appearance: "light" | "dark" }) {
   const [menuState, setMenuState] = useState<"none" | "menu" | "language">(
-    "none"
+    "none",
   );
 
   const chapters: [string, string][] = [

@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
 import Local from "@/components/local";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import Hero from "@/components/hero";
-import React from 'react';
+import React from "react";
 
 export default function Home() {
   return (

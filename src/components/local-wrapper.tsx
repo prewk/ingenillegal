@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
 import React from "react";
-import Link from 'next/link';
+import Link from "next/link";
 import { Header } from "./header";
 import { Footer } from "./footer";
-import { FacebookProvider } from 'react-facebook';
+import { FacebookProvider } from "react-facebook";
 
 export function LocalWrapper({
   title,
@@ -12,7 +12,7 @@ export function LocalWrapper({
   socials,
   links,
   children,
-  pathname
+  pathname,
 }: {
   title: string;
   titleLink: string;
@@ -48,7 +48,11 @@ export function LocalWrapper({
             <li key={link}>
               <Link
                 href={link}
-                className={`block uppercase hover:underline font-medium text-xl py-2 ${pathname === link ? 'underline text-ocean-light' : 'no-underline text-black'}`}
+                className={`block uppercase hover:underline font-medium text-xl py-2 ${
+                  pathname === link
+                    ? "underline text-ocean-light"
+                    : "no-underline text-black"
+                }`}
               >
                 {label}
               </Link>
