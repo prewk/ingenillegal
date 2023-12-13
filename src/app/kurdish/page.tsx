@@ -1,17 +1,17 @@
 "use client";
 import Content from "./content.mdx";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
 import React from "react";
+import { GlobalWrapper } from "@/components/global-wrapper";
 
 export default function Page() {
   return (
-    <>
-      <Header appearance="dark" />
-      <main className="mx-auto px-4 md:max-w-[75%] mt-40" dir="rtl">
-        <Content />
-      </main>
-      <Footer />
-    </>
+    <GlobalWrapper
+      appearance="light"
+      title="  كوردی"
+      subtitle="بَ خێربێي بۆ هاڵپَ ڕی ئَ اًَّ ی کَ ئَ ڵێي ، ه کَ ش ئازادٍ لَ"
+      dir="rtl"
+    >
+      <Content />
+    </GlobalWrapper>
   );
 }

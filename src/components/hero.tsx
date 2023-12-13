@@ -11,7 +11,7 @@ export default function Hero({
   appearance: "light" | "dark";
   bg?: string;
   title: string;
-  subtitle: string;
+  subtitle?: string;
 }) {
   const bgDeclaration = bg ? `url('${bg}')` : "none";
 
@@ -32,13 +32,15 @@ export default function Hero({
       >
         {title}
       </h1>
-      <p
-        className={`font-mono text-xl md:text-2xl text-center mx-auto px-4 md:max-w-[75%] ${
-          appearance === "light" ? "text-carbon" : "text-white"
-        }`}
-      >
-        {subtitle}
-      </p>
+      {subtitle && (
+        <p
+          className={`font-mono text-xl md:text-2xl text-center mx-auto px-4 md:max-w-[75%] ${
+            appearance === "light" ? "text-carbon" : "text-white"
+          }`}
+        >
+          {subtitle}
+        </p>
+      )}
     </section>
   );
 }

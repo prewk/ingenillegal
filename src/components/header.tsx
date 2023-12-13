@@ -29,7 +29,7 @@ export function Header({ appearance }: { appearance: "light" | "dark" }) {
     ["فارسی", "/persian"],
     ["Русский", "/russian"],
     ["Türkçe", "/turkce"],
-    ["Français", "/francai"],
+    ["Français", "/francais"],
   ];
 
   const fill = appearance === "light" ? "fill-white" : "fill-carbon";

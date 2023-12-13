@@ -1,17 +1,16 @@
 "use client";
 import Content from "./content.mdx";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
 import React from "react";
+import { GlobalWrapper } from "@/components/global-wrapper";
 
 export default function Page() {
   return (
-    <>
-      <Header appearance="dark" />
-      <main className="mx-auto px-4 md:max-w-[75%] mt-40">
-        <Content />
-      </main>
-      <Footer />
-    </>
+    <GlobalWrapper
+      appearance="light"
+      title="Türkçe"
+      subtitle="Herkesin, dünyayı gezip ve istediği yerde yaşayabileceği özgürlüğe sahip olduğuna inanan bir websitesine hoşgeldiniz."
+    >
+      <Content />
+    </GlobalWrapper>
   );
 }

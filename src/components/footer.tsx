@@ -13,7 +13,7 @@ export function Footer() {
     ["فارسی", "/persian"],
     ["Русский", "/russian"],
     ["Türkçe", "/turkce"],
-    ["Français", "/francai"],
+    ["Français", "/francais"],
   ];
 
   return (

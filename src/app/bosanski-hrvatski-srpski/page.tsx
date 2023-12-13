@@ -1,17 +1,16 @@
 "use client";
 import Content from "./content.mdx";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
 import React from "react";
+import { GlobalWrapper } from "@/components/global-wrapper";
 
 export default function Page() {
   return (
-    <>
-      <Header appearance="dark" />
-      <main className="mx-auto px-4 md:max-w-[75%] mt-40">
-        <Content />
-      </main>
-      <Footer />
-    </>
+    <GlobalWrapper
+      appearance="light"
+      title="Bosanski Hrvatski Srpski"
+      subtitle="Dobro došli na stranicu organizacije ”Niko/nitko nije ilegalan” (Ingen människa är illegal). Ova stranica je za nas koji smo ubijeđeni da svi ljudi imaju pravo na slobodu kretanja po svijetu kao i pravo da žive gdje god žele na ovoj planeti."
+    >
+      <Content />
+    </GlobalWrapper>
   );
 }
