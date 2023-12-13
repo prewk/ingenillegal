@@ -22,14 +22,14 @@ export function Header({ appearance }: { appearance: "light" | "dark" }) {
   const languages: [string, string][] = [
     ["English", "/english"],
     ["Bosanski Hrvatski Srpski", "/bosanski-hrvatski-srpski"],
-    ["Español", "/spanish"],
-    ["Deutsch", "/german"],
+    ["Español", "/espanol"],
+    ["Deutsch", "/deutch"],
     ["ትግርኛ", "/tigrigna"],
     ["كوردی", "/kurdish"],
     ["فارسی", "/persian"],
     ["Русский", "/russian"],
-    ["Türkçe", "/turkish"],
-    ["Français", "/french"],
+    ["Türkçe", "/turkce"],
+    ["Français", "/francai"],
   ];
 
   const fill = appearance === "light" ? "fill-white" : "fill-carbon";
@@ -38,7 +38,7 @@ export function Header({ appearance }: { appearance: "light" | "dark" }) {
   return (
     <>
       <header className="p-4 md:p-8 flex items-center justify-between absolute top-0 inset-x-0 z-10">
-        <Link href="/public" className="h-14 md:h-24 w-auto">
+        <Link href="/" className="h-14 md:h-24 w-auto">
           <Logo appearance={appearance} />
         </Link>
         <div className="text-right">

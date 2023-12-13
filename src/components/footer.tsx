@@ -6,14 +6,14 @@ export function Footer() {
   const languages: [string, string][] = [
     ["English", "/english"],
     ["Bosanski Hrvatski Srpski", "/bosanski-hrvatski-srpski"],
-    ["Español", "/spanish"],
-    ["Deutsch", "/german"],
+    ["Español", "/espanol"],
+    ["Deutsch", "/deutch"],
     ["ትግርኛ", "/tigrigna"],
     ["كوردی", "/kurdish"],
     ["فارسی", "/persian"],
     ["Русский", "/russian"],
-    ["Türkçe", "/turkish"],
-    ["Français", "/french"],
+    ["Türkçe", "/turkce"],
+    ["Français", "/francai"],
   ];
 
   return (

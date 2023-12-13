@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 a {
-  @apply text-ocean-light hover:text-ocean-medium transition-colors underline;
+    @apply text-ocean-light hover:text-ocean-medium transition-colors underline;
 }
 
 /* Put stuff in the middle */
@@ -12,7 +12,7 @@ h2,
 p,
 ul,
 .wrapper {
-  @apply mx-auto max-w-[650px] px-4;
+    @apply max-w-[650px];
 }
 
 /* When wrapped by the local wrapper sidemenu thingie, don't put stuff in the middle */
@@ -20,41 +20,41 @@ ul,
 h2,
 p,
 ul {
-  @apply mx-0 max-w-none px-0;
+    @apply mx-0 max-w-none px-0;
 }
 
 h1 {
-  @apply text-5xl mt-10 mb-2 font-black;
+    @apply text-5xl mt-10 mb-2 font-black;
 }
 
 h2 {
-  @apply text-2xl font-mono my-8;
+    @apply text-2xl font-mono my-8;
 }
 
 h3 {
-  @apply text-2xl mt-10 mb-2 font-black;
+    @apply text-2xl mt-10 mb-2 font-black;
 }
 
 h4 {
-  @apply text-xl mt-10 mb-2 font-black;
+    @apply text-xl mt-10 mb-2 font-black;
 }
 
 p {
-  @apply mb-4 text-xl font-light font-roboto;
+    @apply mb-4 text-xl font-light font-roboto;
 }
 
 em {
-  @apply italic;
+    @apply italic;
 }
 
 strong {
-  @apply font-extrabold;
+    @apply font-extrabold;
 }
 
 ul {
-  @apply ml-8 mb-4 list-disc text-xl font-light font-roboto;
+    @apply ml-8 mb-4 list-disc text-xl font-light font-roboto;
 }
 
 main {
-  @apply z-0 relative;
+    @apply z-0 relative;
 }

@@ -17,7 +17,10 @@ export default function Local({
   ];
 
   return (
-    <section className={`${appearance === "filled" ? "bg-ocean-light" : ""}`}>
+    <section
+      className={`${appearance === "filled" ? "bg-ocean-light" : ""}`}
+      dir="ltr"
+    >
       <div className="grid grid-cols-1 md:grid-cols-2 relative max-w-[1010px] px-5 mx-auto">
         <div>
           <img

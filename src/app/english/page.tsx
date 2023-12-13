@@ -6,7 +6,7 @@ import Hero from "@/components/hero";
 import Local from "@/components/local";
 import Image from "next/image";
 import noNations from "../../../public/imai_no-borders-no-nations.jpg";
-import uppsala from "../../../public/uppsala01.jpg";
+import uppsala from "../../../public/uppsala-fika.jpg";
 import React from "react";
 
 export default function Page() {
@@ -16,7 +16,7 @@ export default function Page() {
       <main>
         <Hero
           appearance="light"
-          title="Page"
+          title="English"
           subtitle="Welcome to a website for those who believe that all peoples should be free to roam the world and live wherever they please."
         />
         <Image
