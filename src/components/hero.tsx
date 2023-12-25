@@ -7,17 +7,21 @@ export default function Hero({
   bg,
   title,
   subtitle,
+  high,
 }: {
   appearance: "light" | "dark";
   bg?: string;
   title: string;
   subtitle?: string;
+  high?: boolean;
 }) {
   const bgDeclaration = bg ? `url('${bg}')` : "none";
 
   return (
     <section
-      className="h-[70vh] flex flex-col justify-center bg-cover"
+      className={`${
+        high ? "p-32" : "pt-32"
+      } flex flex-col justify-center bg-cover`}
       style={{
         backgroundImage:
           appearance === "dark"

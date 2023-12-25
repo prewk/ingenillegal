@@ -12,6 +12,7 @@ export function GlobalWrapper({
   bg,
   children,
   dir,
+  high,
 }: {
   appearance: "dark" | "light";
   title: string;
@@ -19,12 +20,19 @@ export function GlobalWrapper({
   bg?: string;
   children: React.ReactNode;
   dir?: string;
+  high?: boolean;
 }) {
   return (
     <>
       <Header appearance={appearance == "dark" ? "light" : "dark"} />
-      <Hero appearance={appearance} title={title} subtitle={subtitle} bg={bg} />
-      <section className="mx-auto my-24 max-w-[650px]" dir={dir}>
+      <Hero
+        appearance={appearance}
+        title={title}
+        subtitle={subtitle}
+        bg={bg}
+        high={high}
+      />
+      <section className="mx-auto max-w-[1000px] my-24" dir={dir}>
         {children}
       </section>
       <Footer />
