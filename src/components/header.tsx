@@ -91,7 +91,7 @@ export function Header({ appearance }: { appearance: "light" | "dark" }) {
           <ul className="font-roboto text-2xl font-bold text-center sm:text-left list-none mx-0 px-16">
             <li>
               <Link
-                className="text-2xl py-2 no-underline text-white hover:text-white border border-transparent inline-block border-b border-b-light/0 hover:border-b-light transition-all duration-300"
+                className="text-2xl my-2 no-underline text-white hover:text-white border border-transparent inline-block border-b border-b-light/0 hover:border-b-light transition-all duration-300"
                 href="/ar-du-papperslos"
               >
                 Är du papperslös?
@@ -99,7 +99,7 @@ export function Header({ appearance }: { appearance: "light" | "dark" }) {
             </li>
             <li>
               <Link
-                className="text-2xl py-2 no-underline text-white hover:text-white border border-transparent inline-block border-b border-b-light/0 hover:border-b-light transition-all duration-300"
+                className="text-2xl my-2 no-underline text-white hover:text-white border border-transparent inline-block border-b border-b-light/0 hover:border-b-light transition-all duration-300"
                 href="/engagera-dig"
               >
                 Engagera dig
@@ -107,7 +107,7 @@ export function Header({ appearance }: { appearance: "light" | "dark" }) {
             </li>
             <li>
               <Link
-                className="text-2xl py-2 no-underline text-white hover:text-white border border-transparent inline-block border-b border-b-light/0 hover:border-b-light transition-all duration-300"
+                className="text-2xl my-2 no-underline text-white hover:text-white border border-transparent inline-block border-b border-b-light/0 hover:border-b-light transition-all duration-300"
                 href="/ge-ett-bidrag"
               >
                 Ge ett bidrag
@@ -115,7 +115,7 @@ export function Header({ appearance }: { appearance: "light" | "dark" }) {
             </li>
             <li>
               <Link
-                className="text-2xl py-2 no-underline text-white hover:text-white border border-transparent inline-block border-b border-b-light/0 hover:border-b-light transition-all duration-300"
+                className="text-2xl my-2 no-underline text-white hover:text-white border border-transparent inline-block border-b border-b-light/0 hover:border-b-light transition-all duration-300"
                 href="/om-oss"
               >
                 Om oss
@@ -145,7 +145,7 @@ export function Header({ appearance }: { appearance: "light" | "dark" }) {
             {languages.map(([label, link]) => (
               <li key={label}>
                 <Link
-                  className="text-white no-underline hover:text-white border border-transparent inline-block border-b border-b-light/0 hover:border-b-light transition-all duration-300"
+                  className="text-white no-underline hover:text-white border border-transparent inline-block border-b border-b-light/0 hover:border-b-light transition-all duration-300 my-2"
                   href={link}
                 >
                   {label}

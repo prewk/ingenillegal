@@ -7,21 +7,17 @@ export default function Hero({
   bg,
   title,
   subtitle,
-  high,
 }: {
   appearance: "light" | "dark";
   bg?: string;
   title: string;
   subtitle?: string;
-  high?: boolean;
 }) {
   const bgDeclaration = bg ? `url('${bg}')` : "none";
 
   return (
     <section
-      className={`${
-        high ? "p-32" : "pt-32"
-      } flex flex-col justify-center bg-cover`}
+      className="flex flex-col justify-center bg-cover h-[60vh]"
       style={{
         backgroundImage:
           appearance === "dark"
@@ -30,7 +26,7 @@ export default function Hero({
       }}
     >
       <h1
-        className={`font-roboto text-3xl md:text-5xl font-black text-center mx-auto px-4 md:max-w-[60%] mb-8 ${
+        className={`text-center mx-auto px-4 md:max-w-[60%] mb-8 ${
           appearance === "light" ? "text-carbon" : "text-white"
         }`}
       >

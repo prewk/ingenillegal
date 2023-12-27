@@ -6,59 +6,109 @@ a {
     @apply text-ocean-light hover:text-ocean-medium transition-colors underline;
 }
 
-/* Put stuff in the middle */
-h1,
-h2,
-p,
-ul,
-.wrapper {
-    @apply max-w-[650px];
-}
+/*!* Put stuff in the middle *!*/
+/*h1,*/
+/*h2,*/
+/*p,*/
+/*ul,*/
+/*.wrapper {*/
+/*    @apply max-w-[650px];*/
+/*}*/
 
-/* When wrapped by the local wrapper sidemenu thingie, don't put stuff in the middle */
-.local-main h1,
-h2,
-p,
-ul {
-    @apply mx-0 max-w-none px-0;
-}
+/*!* When wrapped by the local wrapper sidemenu thingie, don't put stuff in the middle *!*/
+/*.local-main h1,*/
+/*h2,*/
+/*p,*/
+/*ul {*/
+/*    @apply mx-0 max-w-none px-0;*/
+/*}*/
 
 h1 {
     @apply text-5xl mt-10 mb-2 font-black;
 }
 
-h2 {
-    @apply text-2xl font-mono my-8;
+/*h2 {*/
+/*    @apply text-2xl font-mono my-8;*/
+/*}*/
+
+/*h3 {*/
+/*    @apply text-2xl mt-10 mb-2 font-black;*/
+/*}*/
+
+/*h4 {*/
+/*    @apply text-xl mt-10 mb-2 font-black;*/
+/*}*/
+
+/*p {*/
+/*    @apply mb-4 text-xl font-light font-roboto;*/
+/*}*/
+
+/*h1, h2, h3, h4, p, ul {*/
+/*    @apply px-24*/
+/*}*/
+
+/*em {*/
+/*    @apply italic;*/
+/*}*/
+
+/*strong {*/
+/*    @apply font-extrabold;*/
+/*}*/
+
+/*ul {*/
+/*    @apply ml-8 mb-4 list-disc text-xl font-light font-roboto;*/
+/*}*/
+
+/*main {*/
+/*    @apply z-0 relative;*/
+/*}*/
+
+.mdx p,
+.mdx h1,
+.mdx h2,
+.mdx h3,
+.mdx ul,
+.mdx img {
+    @apply md:max-w-[75%] mx-auto;
 }
 
-h3 {
-    @apply text-2xl mt-10 mb-2 font-black;
+.mdx p,
+.mdx h1,
+.mdx h2,
+.mdx h3,
+.mdx ul {
+    @apply px-4 md:px-0;
 }
 
-h4 {
-    @apply text-xl mt-10 mb-2 font-black;
+.mdx p strong {
+    @apply font-black;
 }
 
-p {
-    @apply mb-4 text-xl font-light font-roboto;
+.local-main .mdx p,
+.local-main .mdx h1,
+.local-main .mdx h2,
+.local-main .mdx h3,
+.local-main .mdx ul,
+.local-main .mdx img {
+    @apply max-w-full mx-0;
 }
 
-h1, h2, h3, h4, p, ul {
-    @apply px-24
+.mdx p, .mdx ul {
+    @apply font-roboto text-p font-light mt-2 mb-4;
 }
 
-em {
-    @apply italic;
+.mdx ul {
+    @apply list-disc;
 }
 
-strong {
-    @apply font-extrabold;
+.mdx li {
+    @apply ml-8;
 }
 
-ul {
-    @apply ml-8 mb-4 list-disc text-xl font-light font-roboto;
+.mdx h2 {
+    @apply font-mono text-2xl font-normal my-8;
 }
 
-main {
-    @apply z-0 relative;
+.mdx h3 {
+    @apply font-roboto text-2xl font-black mt-8 leading-8;
 }

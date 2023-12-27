@@ -11,7 +11,6 @@ export default function Page() {
       title="Engagera dig"
       subtitle="IMäI består av sina medlemmars engagemang. Det finns många sätt att engagera sig, och här listar vi några."
       bg="/imai_banner.jpg"
-      high
     >
       <Content />
     </GlobalWrapper>

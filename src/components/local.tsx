@@ -4,8 +4,10 @@ import React from "react";
 
 export default function Local({
   appearance,
+  className,
 }: {
   appearance: "transparent" | "filled";
+  className?: string;
 }) {
   const chapters: [string, string][] = [
     ["Göteborg", "/goteborg"],
@@ -18,7 +20,9 @@ export default function Local({
 
   return (
     <section
-      className={`my-10 ${appearance === "filled" ? "bg-ocean-light" : ""}`}
+      className={`${className ?? ""} ${
+        appearance === "filled" ? "bg-ocean-light" : ""
+      }`}
       dir="ltr"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 relative max-w-[1010px] px-5 mx-auto">
@@ -32,7 +36,7 @@ export default function Local({
           {chapters.map(([label, link]) => (
             <a
               key={label}
-              className="font-mono font-medium block no-underline py-4 px-4 text-center text-white bg-ocean-medium mx-[20vw] md:mx-0"
+              className="font-mono font-medium block no-underline py-4 px-4 text-center text-white hover:text-white bg-ocean-medium hover:bg-ocean-dark mx-[20vw] md:mx-0"
               href={link}
             >
               {label}
