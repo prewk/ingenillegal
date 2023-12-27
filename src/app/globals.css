@@ -6,62 +6,9 @@ a {
     @apply text-ocean-light hover:text-ocean-medium transition-colors underline;
 }
 
-/*!* Put stuff in the middle *!*/
-/*h1,*/
-/*h2,*/
-/*p,*/
-/*ul,*/
-/*.wrapper {*/
-/*    @apply max-w-[650px];*/
-/*}*/
-
-/*!* When wrapped by the local wrapper sidemenu thingie, don't put stuff in the middle *!*/
-/*.local-main h1,*/
-/*h2,*/
-/*p,*/
-/*ul {*/
-/*    @apply mx-0 max-w-none px-0;*/
-/*}*/
-
 h1 {
     @apply text-5xl mt-10 mb-2 font-black;
 }
-
-/*h2 {*/
-/*    @apply text-2xl font-mono my-8;*/
-/*}*/
-
-/*h3 {*/
-/*    @apply text-2xl mt-10 mb-2 font-black;*/
-/*}*/
-
-/*h4 {*/
-/*    @apply text-xl mt-10 mb-2 font-black;*/
-/*}*/
-
-/*p {*/
-/*    @apply mb-4 text-xl font-light font-roboto;*/
-/*}*/
-
-/*h1, h2, h3, h4, p, ul {*/
-/*    @apply px-24*/
-/*}*/
-
-/*em {*/
-/*    @apply italic;*/
-/*}*/
-
-/*strong {*/
-/*    @apply font-extrabold;*/
-/*}*/
-
-/*ul {*/
-/*    @apply ml-8 mb-4 list-disc text-xl font-light font-roboto;*/
-/*}*/
-
-/*main {*/
-/*    @apply z-0 relative;*/
-/*}*/
 
 .mdx p,
 .mdx h1,
