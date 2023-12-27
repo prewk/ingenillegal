@@ -17,7 +17,7 @@ export function Modal({
       }`}
     >
       <div className="flex justify-between items-center p-8">
-        <a href="/public" className="h-14 md:h-24 w-auto">
+        <a href="/" className="h-14 md:h-24 w-auto">
           <Logo appearance="light" />
         </a>
         <svg
