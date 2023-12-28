@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 export default function Local({
   appearance,
@@ -27,8 +28,9 @@ export default function Local({
     >
       <div className="grid grid-cols-1 md:grid-cols-2 relative max-w-[1010px] px-5 mx-auto">
         <div>
-          <img
+          <Image
             src="/pekar.png"
+            alt="Illustration av person med IMÄI-tröja"
             className="relative md:absolute -top-10 left-0 h-auto md:h-[380px] w-full md:w-auto z-0"
           />
         </div>

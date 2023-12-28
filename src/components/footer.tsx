@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 export function Footer() {
   const languages: [string, string][] = [
@@ -21,9 +22,9 @@ export function Footer() {
       className="bg-cover bg-center p-12 mt-0 flex flex-col items-center"
       style={{ backgroundImage: "url(/fot.jpeg)" }}
     >
-      <img
+      <Image
         src="/fot_sprak.svg"
-        alt=""
+        alt="Språk-ikon"
         className="align-middle border-none mb-8 w-12 max-w-full h-auto"
       />
       <div className="max-w-[700px] flex flex-wrap justify-center mb-6">
