@@ -28,6 +28,7 @@ const config: Config = {
         xl: ["1.25rem", "2rem"],
         p: ["1.375rem", "2rem"],
         "2xl": ["1.5rem", "2.25rem"],
+        "3xl": ["1.75rem", "1.2"],
         "5xl": ["3rem", "1.2"],
       },
       backgroundImage: {
