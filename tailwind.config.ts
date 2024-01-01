@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        landscape: { raw: "(max-height: 640px)" },
+        short: { raw: "(max-height: 480px)" },
       },
       spacing: {
         1.5: "0.3725rem",
