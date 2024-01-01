@@ -1,7 +1,7 @@
 "use client";
 
 import Content from "./content.mdx";
-import { GlobalWrapper } from "../../components/global-wrapper";
+import { GlobalWrapper } from "@/components/global-wrapper";
 
 export default function Page() {
   return (
