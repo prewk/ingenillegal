@@ -9,7 +9,12 @@ export default function Trollhattan() {
     <TrollhattanWrapper>
       <Content />
       <FacebookProvider appId="?">
-        <Page href="https://www.facebook.com/710696319027280" tabs="timeline" />
+        <div className="flex justify-center">
+          <Page
+            href="https://www.facebook.com/710696319027280"
+            tabs="timeline"
+          />
+        </div>
       </FacebookProvider>
     </TrollhattanWrapper>
   );

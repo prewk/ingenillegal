@@ -9,7 +9,12 @@ export default function Goteborg() {
     <GoteborgWrapper>
       <Content />
       <FacebookProvider appId="?">
-        <Page href="https://www.facebook.com/183182731797012" tabs="timeline" />
+        <div className="flex justify-center">
+          <Page
+            href="https://www.facebook.com/183182731797012"
+            tabs="timeline"
+          />
+        </div>
       </FacebookProvider>
     </GoteborgWrapper>
   );

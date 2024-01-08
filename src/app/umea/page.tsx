@@ -9,7 +9,12 @@ export default function Umea() {
     <UmeaWrappper>
       <Content />
       <FacebookProvider appId="?">
-        <Page href="https://www.facebook.com/293706290839886" tabs="timeline" />
+        <div className="flex justify-center">
+          <Page
+            href="https://www.facebook.com/293706290839886"
+            tabs="timeline"
+          />
+        </div>
       </FacebookProvider>
     </UmeaWrappper>
   );

@@ -9,10 +9,12 @@ export default function Uppsala() {
     <UppsalaWrapper>
       <Content />
       <FacebookProvider appId="?">
-        <Page
-          href="https://www.facebook.com/1693535317559340"
-          tabs="timeline"
-        />
+        <div className="flex justify-center">
+          <Page
+            href="https://www.facebook.com/1693535317559340"
+            tabs="timeline"
+          />
+        </div>
       </FacebookProvider>
     </UppsalaWrapper>
   );

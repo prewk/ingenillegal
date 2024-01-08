@@ -9,7 +9,12 @@ export default function Stockholm() {
     <StockholmWrapper>
       <Content />
       <FacebookProvider appId="?">
-        <Page href="https://www.facebook.com/124647770935985" tabs="timeline" />
+        <div className="flex justify-center">
+          <Page
+            href="https://www.facebook.com/124647770935985"
+            tabs="timeline"
+          />
+        </div>
       </FacebookProvider>
     </StockholmWrapper>
   );
