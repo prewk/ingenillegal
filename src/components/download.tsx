@@ -16,7 +16,7 @@ export function Download({
       <span className="text-lg md:text-p text-ocean-light hover:text-ocean-medium transition-colors underline">
         {label}
       </span>{" "}
-      <span className="ml-2 rounded-2xl bg-carbon hover:bg-carbon/80 transition-colors text-white text-xs px-4 py-2">
+      <span className="ml-2 rounded-2xl bg-carbon hover:bg-carbon/80 transition-colors text-white text-xs px-4 py-2 whitespace-nowrap">
         {button}
       </span>
     </a>
