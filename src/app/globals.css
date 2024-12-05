@@ -41,7 +41,7 @@ h1 {
 }
 
 .mdx p, .mdx ul {
-    @apply font-roboto text-p font-light mt-2 mb-4;
+    @apply font-roboto text-p font-light mt-2 mb-4 break-words;
 }
 
 .mdx ul {
