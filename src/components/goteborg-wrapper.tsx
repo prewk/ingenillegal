@@ -17,7 +17,7 @@ export default function GoteborgWrapper({
       titleLink="/goteborg"
       socials={[
         ["Facebook", "https://www.facebook.com/imaiGoteborg"],
-        ["Twitter", "https://twitter.com/ingenillegalgbg"],
+        ["Instagram", "https://www.instagram.com/ingenillegal_gbg"],
       ]}
       links={[
         ["Stöd oss", "/goteborg/stod-oss"],
