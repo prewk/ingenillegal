@@ -23,7 +23,6 @@ export default function GoteborgWrapper({
         ["Stöd oss", "/goteborg/stod-oss"],
         ["Arbetsgrupper", "/goteborg/arbetsgrupper"],
         ["Stadgar", "/goteborg/stadgar"],
-        ["Media", "/goteborg/media"],
         ["English", "/goteborg/english"],
       ]}
       pathname={pathname}
