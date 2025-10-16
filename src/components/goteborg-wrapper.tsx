@@ -22,6 +22,7 @@ export default function GoteborgWrapper({
       links={[
         ["Stöd oss", "/goteborg/stod-oss"],
         ["Arbetsgrupper", "/goteborg/arbetsgrupper"],
+        ["Info för papperslösa", "/goteborg/info-for-papperslosa"],
         ["Stadgar", "/goteborg/stadgar"],
         ["English", "/goteborg/english"],
       ]}
