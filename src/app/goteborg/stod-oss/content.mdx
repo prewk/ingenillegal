@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import stodoss from '../../../../public/gbg-bild-2-stod-oss.jpg'
 import engagera from '../../../../public/gbg-bild-5-engagera-dig.jpeg'
-import swish from '../../../../public/gbg-swish-qr-small.png'
+import qr from '../../../../public/gbg-swish-qr-small.png'
+import {Swish} from "@/components/swish";
 
 # Stöd oss
 
@@ -15,11 +16,7 @@ Vi behöver alltid bli fler som jobbar för en värld utan gränser. Kom och eng
 
 Stöd vårt arbete genom att swisha valfri summa till: 123 395 6620
 
-<Image
-  src={swish}
-  alt="QR-kod för swish"
-  style={{ width: '50%', margin: '0 auto' }}
-/>
+<Swish swishNumber='1233956620' qr={qr} />
 
 ### Bli medlem
 
