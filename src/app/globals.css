@@ -24,7 +24,7 @@ h1 {
 .mdx h2,
 .mdx h3,
 .mdx ul {
-    @apply px-4 md:px-0;
+    @apply px-4 lg:px-0;
 }
 
 .mdx p strong {
