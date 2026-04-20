@@ -59,3 +59,7 @@ h1 {
 .mdx h3 {
     @apply font-roboto text-2xl font-black mt-8 leading-8;
 }
+
+.mdx blockquote {
+    @apply bg-ocean-light text-white pt-3 pb-1 px-5 font-bold;
+}
