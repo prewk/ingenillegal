@@ -23,6 +23,8 @@ export default function GoteborgWrapper({
         ["Stöd oss", "/goteborg/stod-oss"],
         ["Arbetsgrupper", "/goteborg/arbetsgrupper"],
         ["Info för papperslösa", "/goteborg/info-for-papperslosa"],
+        ["Flyktingbarnmottagning", "/goteborg/flyktingbarnmottagning"],
+        ["HBTQI-flyktingar", "/goteborg/hbtqi-flyktingar"],
         ["Stadgar", "/goteborg/stadgar"],
         ["English", "/goteborg/english"],
       ]}
