@@ -1,16 +1,5 @@
 import type { Metadata } from "next";
-import { Roboto, Roboto_Mono } from "next/font/google";
 import "./globals.css";
-
-const roboto = Roboto({
-  weight: ["300", "400", "500", "700", "900"],
-  subsets: ["latin-ext"],
-});
-
-const robotoMono = Roboto_Mono({
-  weight: ["400", "500"],
-  subsets: ["latin-ext"],
-});
 
 export const metadata: Metadata = {
   title: "Ingen människa är illegal",
@@ -25,8 +14,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@400;500&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body
-        className={`bg-cream text-carbon font-roboto leading-normal ${roboto.className} ${robotoMono.className}`}
+        className="bg-cream text-carbon font-roboto leading-normal"
       >
         {children}
       </body>
