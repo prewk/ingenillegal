@@ -20,6 +20,7 @@ export default function OstersundWrapper({
         ["Instagram", "https://www.instagram.com/imaiostersund"],
       ]}
       links={[
+        ["Kontakta oss", "/ostersund/kontakta-oss"],
         ["Stöd oss", "/ostersund/stod-oss"],
         ["English", "/ostersund/english"],
       ]}
